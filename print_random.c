@@ -9,13 +9,13 @@ int main()
 	int a;
 
 	/* seed the randomizer */
-	srand( (unsigned)time(NULL) );
+	srand( (unsigned)time(0) );
+	short asciiUperCase = 65;
+	short numLetters = 26;
 
-	printf("Today's random word: ");
-	for(a=0;a<7;a++)
-		putchar( randchar() );
-	putchar('\n');
+	char example = (char)(rand()%numLetters+asciiUperCase);
+	printf("%c\n", example);
 
-	return(0);
+	return(example);
 }
 
