@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "header.h"
 #include <stdlib.h>
 #include <time.h>
 
@@ -13,7 +14,7 @@ int main()
 	short asciiUperCase = 65;
 	short numLetters = 26;
 
-	char example = (char)(rand()%numLetters+asciiUperCase);
+	char example = randomCharacter();
 	printf("%c\n", example);
 
 	return(example);
